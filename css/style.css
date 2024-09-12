@@ -1,4 +1,175 @@
 body {
+display: flex;
+justify-content: center;
+align-items: center;
+ 
+}
+
+main {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.size {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 10%;
+  /*border: 2px solid black;*/
+}
+
+.apple {
+  position: relative;
+  top: 705px;
+  left: 450px;
+  padding: 2px;
+  margin: 2px;
+  text-align: center;
+  object-fit: cover;
+  mix-blend-mode: darken;
+  filter: contrast(1);
+  background: linear-gradient(to bottom right, rgba(227,102,30,0.2), #fff8f8); 
+  animation: apple ease-in-out 1s forwards;
+  animation-delay: 0.5s;
+  opacity: 0;
+  
+
+}
+
+@keyframes apple { 
+
+  from { 
+    opacity: 0;
+    transform: translateX(50%)
+  
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+   
+}
+
+.circle {
+
+  position: relative;
+  left: 34%;
+  top: 36rem;
+  padding: 2px;
+  margin: 2px;
+  z-index: 1;
+
+}
+.circle img {
+
+  width: 15rem;
+  border-radius: 100%;
+}
+
+
+.gpay {
+  position: relative;
+  top: 390px;
+  left: 110px;
+  padding: 2px;
+  margin: 2px;
+  object-fit: cover;
+  text-align: center;
+  background: linear-gradient(to top left, rgba(253,29,237,0.2), #fff8f8);  
+  animation: gpay ease-in-out 1s forwards;
+  animation-delay: 1s;
+  opacity: 0;
+}
+
+@keyframes gpay {
+
+  from {
+    opacity: 0;
+    transform: translateX(-50%)
+  }
+  to { 
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+}
+.mastercard {
+  position: relative;
+  top: 60px;
+  left: 450px;
+  padding: 2px;
+  margin: 5px;
+  text-align: center;
+  object-fit: cover;
+  background: linear-gradient(to top right, rgb(191, 192, 196, 0.5), #fff8f8);  
+  animation:mastercard ease-in-out 1s forwards;
+  opacity: 0;
+  animation-delay: 1.5s;
+}
+
+@keyframes mastercard {
+
+  from {
+    opacity: 0;
+    transform: translateX(50%)
+  }
+  to { 
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+}
+
+.visa {
+  position: relative;
+  top: -609px;
+  left: 110px;
+  padding: 2px;
+  margin: 3px;
+  object-fit: cover;
+  text-align: center;
+  background: linear-gradient(to bottom left, rgb(191, 192, 196, 0.5), #fff8f8);  
+  animation:visa ease-in-out 1s forwards;
+  
+  
+}
+
+@keyframes visa {
+
+  from {
+    opacity: 0;
+    transform: translateX(-50%)
+  }
+  to { 
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  
+}
+
+.visa img {
+  width: 8rem;
+ margin: 25%;
+  
+}
+
+.mastercard img {
+  width: 8rem;
+  margin: 25%;
+}
+
+.gpay img {
+  width: 8rem;
+  margin: 25%;
+ 
+}
+
+.apple img {
+  width: 8rem;
+  margin: 25%;
+}
+
+body {
     
 }
 
